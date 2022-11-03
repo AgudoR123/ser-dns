@@ -1,0 +1,4 @@
+zone "stucomx.net" {
+    type master;
+    file "/etc/bind/db.stucomx.net";
+};

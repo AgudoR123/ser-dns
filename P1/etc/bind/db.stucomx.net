@@ -1,0 +1,25 @@
+;
+;   BIND data file for stucomx.net
+;
+$TTL 604800
+@   IN  SOA stucomx.net.    root.stucomx.net (
+                    2       ; Serial
+                    604800  ; Refresh
+                    86400   ; Retry
+                    2419200 ; Expire
+                    694800 ) ; Negative Cache TTL
+;
+@   IN  NS  localhost.
+server  IN  A       192.168.1.1
+www     IN  CNAME   server
+NS      IN  CNAME   server
+printer IN  A       192.168.1.200
+pc42    IN  A       192.168.1.42
+pc43    IN  A       192.168.1.43
+pc44    IN  A       192.168.1.44
+pc45    IN  A       192.168.1.45
+pc46    IN  A       192.168.1.46
+pc47    IN  A       192.168.1.47
+pc48    IN  A       192.168.1.48
+pc49    IN  A       192.168.1.49
+pc50    IN  A       192.168.1.50
