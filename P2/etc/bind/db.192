@@ -1,0 +1,23 @@
+;
+; BIND reverse data file for stucomx.net
+;
+$TTL	604800
+@	IN	SOA	stucomx.net. root.localhost. (
+			      1		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	localhost.
+1	IN	PTR	server
+200	IN	PTR	printer
+42	IN	PTR	pc42
+43	IN	PTR	pc43
+44	IN	PTR	pc44
+45	IN	PTR	pc45
+46	IN	PTR	pc46
+47	IN	PTR	pc47
+48	IN	PTR	pc48
+49	IN	PTR	pc49
+50	IN	PTR	pc50

@@ -1,0 +1,32 @@
+;
+; BIND data file for stucomx.net
+;
+$TTL	604800
+@	IN	SOA	stucomx.net. root.stucomx.net. (
+			      3		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	localhost.
+server	IN	A	192.168.1.1
+www	IN	CNAME	server
+ns	IN	CNAME	server
+printer	IN	A	192.168.1.200
+pc42	IN	A	192.168.1.42
+pc43	IN	A	192.168.1.43
+pc44	IN	A	192.168.1.44
+pc45	IN	A	192.168.1.45
+pc46	IN	A	192.168.1.46
+pc47	IN	A	192.168.1.47
+pc48	IN	A	192.168.1.48
+pc49	IN	A	192.168.1.49
+pc50	IN	A	192.168.1.50
+@	IN	MX	1	ASPMX.L.GOOGLE.COM
+	IN	MX	5	ALT1.ASPMX.L.GOOGLE.COM
+	IN	MX	5	ALT2.ASPMX.L.GOOGLE.COM
+	IN	MX	10	ALT3.ASPMX.L.GOOGLE.COM
+	IN	MX	10	ALT4.ASPMX.L.GOOGLE.COM
+@	IN	TXT	v=spf1 include:_spf.google.com ~all
+@	IN	CAA	0	issue "letsencrypt.org"
